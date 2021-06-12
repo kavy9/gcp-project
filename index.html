@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style type="text/css">
+            table
+            {
+                background-color: #fa9a4c ;
+            }
+            td:hover
+            {
+                background-color:  rgb(12, 11, 70) ;
+            
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2> Application Form to open an account</h2>
+        <form action="/indexCode" method="POST" enctype="multipart/form-data">
+        <table border="1">
+            <tr>
+                <td>
+                    <input type="text" name="tfAcNo" placeholder="Enter Ac No "/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="tfAcHName" placeholder="Enter Ac Name "/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="pfPIN" placeholder="Enter PIN"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="rbtngen" value="Male"/> Male 
+                    <input type="radio" name="rbtngen" value="Female"/> Female 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="ddCity">
+                        <optgroup label="Maharastra">
+                            <option> Mumbai </option>
+                            <option> Pune </option>
+                        </optgroup>
+                        <optgroup label="Rajasthan">
+                            <option> Jaipur </option>
+                            <option> Udaipur </option>
+                        </optgroup>
+                        <optgroup label="Gujarat">
+                            <option> Ahemdabad </option>
+                            <option> Surat </option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="tfBC" placeholder="Branch Code"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="tfBN" placeholder="Branch Name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="taBA">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select an Image : 
+                    <input type="file" name="propic"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+{% autoescape true %}
+<html>
+    <head>
+        <title>
+             Account Details
+        </title>
+        <style type="text/css">
+            table
+            {
+                background-color: #fa9a4c;
+            }
+            td
+            {
+                margin: 10px;
+                padding: 10px;
+            }
+            tr:hover
+            {
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> Account Details</h2>
+        <table border="1">
+            {% for item in data %}
+            <tr>
+                <td><img src="{{item.ImgURL}}"> </td>
+                <td> {{item.AcNo}} </td>
+                <td> {{item.AcHName}} </td>
+                <td> {{item.AcBalance}} </td>
+                <td> {{item.PIN}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
+{% endautoescape %}
